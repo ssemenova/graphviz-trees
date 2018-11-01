@@ -1,0 +1,17 @@
+strict digraph {
+    a [xlabel = "3", style=filled, fillcolor=red];
+    b [xlabel = "2", style=filled, fillcolor=red];
+    c [xlabel = "1"];
+    d [xlabel = "1"];
+    e [xlabel = "0"];
+    f [xlabel = "0"];
+    g [xlabel = "0"];
+    h [xlabel = "0"];
+    a -> b;
+    b -> c;
+    c -> d;
+    d -> e;
+    a -> f;
+    b -> g;
+    c -> h;
+}
