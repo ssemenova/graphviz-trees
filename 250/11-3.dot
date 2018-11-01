@@ -2,6 +2,7 @@ strict digraph {
     rank1 [style=invisible];
     rank2 [style=invisible];
     rank3 [style=invisible];
+    rank4 [style=invisible];
     rank1 -> rank2 [color=white];
 
     A [style = filled, xlabel = "2", fillcolor = red];
@@ -9,6 +10,12 @@ strict digraph {
     C [xlabel = "0"];
     D [xlabel = "1"];
     E [xlabel = "0"];
+
+    f [style=invis];
+    g [style=invis];
+    B -> f [style=invis];
+    D -> g [style=invis];
+
     A -> B;
     A -> C;
     B -> D;
@@ -18,4 +25,15 @@ strict digraph {
         rank = same;
         rank2 -> C -> B [style=invis];
     }
+
+    {
+        rank = same;
+        rank3 -> f -> D [style=invis];
+    }
+    
+    {
+        rank = same;
+        rank4 -> g -> E [style=invis];
+    }
+
 }

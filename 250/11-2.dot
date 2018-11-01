@@ -8,4 +8,9 @@ strict digraph {
     A -> C;
     B -> D;
     D -> E;
+    
+    f [style=invis];
+    g [style=invis];
+    B -> f [style=invis];
+    D -> g [style=invis]; 
 }
