@@ -1,0 +1,8 @@
+strict digraph {
+    B [xlabel = "0"];
+    A [xlabel = "0"];
+    C [xlabel = "0"];
+    A -> B;
+    A -> C;
+
+}

@@ -1,0 +1,27 @@
+strict digraph {
+    rank1 [style=invisible];
+    rank2 [style=invisible];
+
+    B [xlabel = "2", fillcolor=red, style=filled];
+    A [xlabel = "1"];
+    C [xlabel = "0"];
+    B -> A;
+    A -> C;
+
+    d [style=invis];
+    e [style=invis];
+    B -> d [style=invis];
+    A -> e [style=invis];
+
+
+    {
+        rank = same;
+        rank1 -> A -> d [style=invis];
+    }
+
+    {
+        rank = same;
+        rank2 -> C -> e [style=invis];
+    }
+
+}
